@@ -1,4 +1,7 @@
-
+.interfaceWidth{
+    --w:[70rem 98vw 72];
+    width: var(--w);
+}
 tag-content{
     --pad:[1.5rem .5rem 40];
     width: 100%;
@@ -99,7 +102,7 @@ tag-current tag-current:last-child{
 }
 
 button#deletes{
-    --wdt:[50rem 95vw 52];
+    --wdt:[50rem 98vw 52];
     width: var(--wdt);
     text-align: center;
     justify-content: center;
@@ -132,8 +135,8 @@ main.simple{
 
 
 
-details{
-    --wdt:[50rem 95vw 52];
+details,select,button:not(header *){
+    --wdt:[50rem 98vw 52];
     width: var(--wdt);
     height: auto;
 }
@@ -201,7 +204,7 @@ body #elementPreview:has(*){
 }
 
 #btnPreviewClose{
-    --wth:[50rem 95vw 72];
+    --wth:[50rem 98vw 72];
     z-index: 100000;
     display: none;
     width: var(--wth);
@@ -229,7 +232,7 @@ body #elementPreview:has(*){
 }
 
 #creationMenu *{
-    --wdt:[70rem 95vw 72];
+    --wdt:[70rem 98vw 72];
     width: var(--wdt);
     height: 3rem;
     justify-content: center;
@@ -362,7 +365,7 @@ body #action button#btnImgPreview{
 }
 
 body #imgPreview{
-    --wdt:[70rem 95vw 72];
+    --wdt:[70rem 98vw 72];
     z-index: 9999999999999999999999999999999999999999999999999999999999999999999;
     position: absolute;
     display: flex;
@@ -375,7 +378,7 @@ body #imgPreview{
 
 
 body #imgPreview .imgFit{
-    --wdt:[70rem 95vw 72];
+    --wdt:[70rem 98vw 72];
     --hgt:[40rem 55vh 72];
     width: var(--wdt);
     height: var(--hgt);
@@ -429,7 +432,7 @@ header menu{
 }
 
 header menu a,header menu button,header menu details summary{
-    --wth:[auto 90.1vw 50];
+    --wth:[auto 98vw 50];
     --hgt:[auto 4rem 50];
     width: var(--wth);
     height: var(--hgt);
