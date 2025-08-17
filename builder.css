@@ -295,7 +295,7 @@ body #elementPreview:has(*){
 }
 
 #action * *{
-    --wdt:[70rem 98vw 72];
+    --wdt:[69.5rem 97vw 72];
     width: var(--wdt);
     height: 3rem;
     margin: .25rem 0;
