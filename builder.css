@@ -295,7 +295,8 @@ body #elementPreview:has(*){
 }
 
 #action * *{
-    width: 100%;
+    --wdt:[70rem 98vw 72];
+    width: var(--wdt);
     height: 3rem;
     margin: .25rem 0;
     justify-content: center;
@@ -391,7 +392,7 @@ body #imgPreview .imgFit{
 }
 
 header{
-    z-index: 1000;
+    z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
     --wth:[100rem 100vw 72];
     --pad:[15rem 5vw 72];
     width: var(--wth);
@@ -486,3 +487,5 @@ main{
     width: 100vw;
     align-items: center;
 }
+
+action

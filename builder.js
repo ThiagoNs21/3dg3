@@ -335,7 +335,7 @@ async function builder(base,route) {
                                 imgSelects.html(option);
                                 __static((imgFit)=>{
                                     imgFit.click((imgFit)=>{
-                                        let getImg = imgFit.dom.src.replaceAll("file:///h:/projetos/testes/","");
+                                        let getImg = imgFit.dom.src;
                                         console.log(getImg)
                                         imgSelects.value(getImg);
                                         btnImgPreview.text(getImg)
