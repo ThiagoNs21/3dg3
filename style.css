@@ -1,0 +1,230 @@
+
+:root{
+    box-sizing: border-box;
+    font: normal var(--fnt) var(--text);
+    color: var(--text-color);
+    letter-spacing: 0;
+    --fnt:[1rem 1.25rem 72];
+    --alignText:[left center 45];
+    --title:times;
+    --text:arial;
+    --title-color:rgb(0, 108, 196);
+    --subtitle-color:rgb(47, 94, 133);
+    --text-color:rgb(102, 102, 102);
+}
+
+.title{
+    --wth:[70rem 90vw 72];
+    --fnt:[2.5rem 3rem 45];
+    width: var(--wth);
+    font: bold var(--fnt) var(--title);
+    text-transform: capitalize;
+    color: var(--title-color);
+    letter-spacing: .45rem;
+    text-align: var(--alignText);
+    margin-top: .35rem;
+}
+.subtitle{
+    --wth:[70rem 90vw 72];
+    --fnt:[1.85rem 2.35rem 45];
+    width: var(--wth);
+    font: normal var(--fnt) var(--title);
+    text-transform: capitalize;
+    color: var(--subtitle-color);
+    letter-spacing: .25rem;
+    text-align: var(--alignText);
+}
+
+
+
+.width{
+    --wth:[70rem 90vw 72];
+    width: var(--wth);
+}
+.height{
+    height: 99.95vh;
+}
+.min-height{
+    min-height: 60rem;
+}
+
+.grid{
+    margin: .35rem;
+    align-items: center;
+}
+.grid:first-child{
+    margin: 0;
+    margin-bottom: .35rem;
+}
+.grid:last-child{
+    margin: 0;
+    margin-top: .35rem;
+}
+.center{
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+}
+.split{
+    --flow:[row column 72];
+    flex-direction: var(--flow);
+    justify-content: space-between;
+    align-items: start;
+    margin: .7rem;
+}
+.split *{
+    --wth:[34.35rem 90vw 72];
+    --pad:[0 .35rem 72];
+    width:var(--wth);
+    padding-top: var(--pad);
+    padding-bottom: var(--pad);
+}
+
+.atSide *:nth-child(1):not(.atSide * *:nth-child(1)){
+    --wth:[49.35rem 90vw 72];
+    width:var(--wth);
+}
+.atSide *:nth-child(2):not(.atSide * *:nth-child(2)){
+    --wth:[19.35rem 90vw 72];
+    width:var(--wth);
+}
+
+.atSide-fixed *:nth-child(1):not(.atSide-fixed * *:nth-child(1)){
+    --wth:[49.35rem 90vw 72];
+    width:var(--wth);
+}
+.atSide-fixed *:nth-child(2):not(.atSide-fixed * *:nth-child(2)){
+    --wth:[19.35rem 90vw 72];
+    width:var(--wth);
+    position: sticky;
+    top: 0;
+}
+body *.split *:has(*):not(body *.split *.center:has(*)){
+    align-items: start;
+    justify-content: start;
+}
+body *.split * *{
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+}
+img{
+    --wdt:[70rem 80rem 72];
+    width: var(--wdt);
+    justify-self: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.imgCover{
+    --wdt:[70rem 90vw 72];
+    width: var(--wdt);
+    height: 40rem;
+    overflow: hidden;
+    margin: .75rem;
+    border-radius: .25rem;
+}
+.imgCover .cover{
+    width: 100%;
+    height: 40rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.736),rgba(0, 0, 0, 0.248),rgba(0, 0, 0, 0.111));
+}
+.imgCoverFullWidth img{
+    --wdt:[100rem 110rem 72];
+    width: var(--wdt);
+    justify-self: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.imgCoverFullWidth{
+    --wdt:100vw;
+    width: var(--wdt);
+    height: 40rem;
+    overflow: hidden;
+    margin: .75rem 0;
+    border-radius: 0;
+}
+.imgCoverFullWidth .cover{
+    width: 100%;
+    height: 40rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.736),rgba(0, 0, 0, 0.248),rgba(0, 0, 0, 0.111));
+}
+
+.imgCover .lightCover~.cover{
+    width: 100%;
+    height: 40rem;
+    background-image: none;
+}
+
+iframe:not(.youtubeVideos){
+    height: 25rem;
+}
+.youtubeVideos{
+    height: 50rem;
+    border-radius: 1rem;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.grade{
+    list-style-type:decimal ;
+}
+
+.disc{
+    list-style-type: disc;
+}
+
+.squareListStyle{
+    list-style-type: square;
+}
+
+.gallery{
+    display: none;
+
+    --wdt:[70rem 90vw 72];
+    --pad:[15rem 5vw 72];
+   width: var(--wdt); 
+   padding:1rem var(--pad);
+   box-sizing: content-box;
+   justify-content: center;
+   justify-self: center;
+   align-self: center;
+   align-items: center;
+   background-color: rgb(62, 62, 62);
+
+}
+
+.gallery nav{
+
+    width: 100vw; 
+    justify-content: center;
+    align-items: center;
+ 
+ }
+ 
+.gallery div{
+
+    width: 100vw; 
+    justify-content: center;
+    align-items: center;
+ 
+ }
+ 
+
+.gallery img{
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin: 1.75rem;
+}
+
+ul li,ol li{
+    padding-top: 1rem;
+}

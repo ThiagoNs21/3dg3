@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="builder.css">
+    <title>Builder</title>
+</head>
+<body>
+
+    <header>
+        <header-logo>Página ADMIN</header-logo>
+        <menu>
+            <button id="btnClear" class="center">limpar</button>
+            <button id="btnSave" class="center">Salvar</button>
+            <button id="btnPreview" class="center">Preview</button>
+        </menu>
+        <button class="menu-btn-open" type="button"><i class="bi bi-list"></i></button>
+        <button class="menu-btn-close" type="button"><i class="bi bi-x"></i></button>
+    </header>
+
+    <nav id="creationMenu">   
+    <select  name="opt" title="selecione" id="opt"></select>
+    <button id="btnAction">criar</button>
+    </nav>
+
+    <main id="elementRepresentation" class="width bw0"></main>
+    <main id="action" class="center"></main>
+    
+    <main id="elementPreviewSection">
+        <nav id="elementPreview"></nav>
+    </main>
+
+    <button id="btnPreviewClose" class="center h25 mb10">Fechar Preview</button>
+    
+    <nav id="navMenu">
+        <button id="btnShowCreationMenu" class=" center br250">Adicionar novo elemento</button>
+    </nav>
+    
+    <nav id="imgPreview"  style="display:none;"></nav>
+</body>
+<script src="dom.js"></script>
+<script src="builder.js"></script>
+<script src="rem.js"></script>
+</html>

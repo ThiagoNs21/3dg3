@@ -1,0 +1,65 @@
+:root{
+    
+    --fs:[4rem 8.5vw 40];
+}
+body{
+    overflow: hidden;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    --flow:row;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    flex-direction: var(--flow);
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0;
+    width: 100vw;
+    height: 58vw;
+    background-color: rgba(255, 0, 0, 0);
+    margin: 0;
+}
+#fileUploader{
+    display: none;
+}
+label{
+    --bw:[0.35vw .7vw 40];
+    width: 67vw;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: gray;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    border-radius: 1rem;
+    border-width: var(--bw);
+    border-color: gray;
+}
+input{
+    background-color: gray;
+    width: 30vw;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    color: white;
+    padding: 0;
+    border-width: 0;
+    margin-left: 2vw;
+}
+
+input,label{
+    --fs:[2.5vw 4.5vw 40];
+    font-size: var(--fs);
+}

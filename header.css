@@ -1,0 +1,96 @@
+header{
+    z-index: 1000;
+    --wth:[100rem 100vw 72];
+    --pad:[15rem 5vw 72];
+    width: var(--wth);
+    height: 4rem;
+    padding: 0 var(--pad);
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    margin: 0 auto;
+    position: fixed;
+}
+header a{
+    font: bold 2rem times;
+    color: red;
+}
+header menu{
+    --show:(".menu-btn-close" none ,".menu-btn-open" flex, event-click);
+    --visibility:[flex var(--show) 50];
+    --pos:[static absolute 50];
+    --flow:[row column 50];
+    --x:[0 -50% 50];
+    display: var(--visibility);
+    flex-direction: var(--flow);
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    position: var(--pos);
+    top: 4rem;
+    left: 50%;
+    transform: translateX(var(--x));
+    background-color: rgb(255, 255, 255);
+    border-width: .25rem;
+    border-color: white;
+}
+
+header menu a,header menu details summary{
+    --wth:[auto 90.1vw 50];
+    --hgt:[auto 4rem 50];
+    width: var(--wth);
+    height: var(--hgt);
+    --color:[white rgb(206, 206, 206) 50];
+    font:normal 1rem arial; 
+    color: gray;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .5rem;
+    background-color: var(--color);
+    margin-top: .25rem;
+    border-radius: .15rem;
+}
+header menu details summary{
+    --color:[white rgb(206, 206, 206) 50];
+    background-color: rgb(110, 110, 110);
+}
+
+header button{
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0);
+}
+
+header button i{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 1.95rem;
+}
+
+.menu-btn-open{
+    --show:(".menu-btn-close" flex , ".menu-btn-open" none , event-click);
+    --visibility:[none var(--show) 50];
+    display: var(--visibility);
+
+}
+.menu-btn-close{
+    --show:(".menu-btn-close" none ,".menu-btn-open" flex , event-click);
+    --visibility:[none var(--show) 50];
+    display: var(--visibility);
+
+}
+
+.menu-spacing{
+
+    height: 4.5rem;
+    width: 100vw;
+
+}
